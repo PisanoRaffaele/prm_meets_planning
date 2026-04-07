@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Process Reward Models Meet Planning</title>
+
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: #222;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .authors {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .affiliation {
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+  }
+
+  .links {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #0366d6;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  h2 {
+    margin-top: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+
+  pre {
+    background: #f6f8fa;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+Process Reward Models Meet Planning:<br>
+Generating Precise and Scalable Datasets for Step-Level Rewards
+</h1>
+
+<div class="authors">
+Raffaele Pisano<sup>1</sup> &nbsp;&nbsp; Roberto Navigli<sup>2</sup>
+</div>
+
+<div class="affiliation">
+<sup>1</sup>Babelscape
+<sup>2</sup>La Sapienza Università di Roma
+</div>
+
+<div class="links">
+<a class="button" href="">📄 Paper</a>
+<a class="button" href="">📊 Dataset</a>
+<a class="button" href="">🤖 Models</a>
+</div>
+
+<h2>Abstract</h2>
+<p>
+Process Reward Models (PRMs) have emerged as a powerful tool for providing step-level feedback when evaluating the reasoning of Large Language Models (LLMs), which frequently produce chains of thought (CoTs) containing multiple errors even when the final answer is correct. However, existing PRM datasets remain expensive to construct, prone to annotation errors, and predominantly limited to the mathematical domain.
+This work introduces a novel and scalable approach to PRM dataset generation based on planning logical problems expressed in the Planning Domain Definition Language (PDDL). 
+Using this method, we generate a corpus of approximately one million reasoning steps across various PDDL domains and use it to train PRMs. Experimental results show that augmenting widely used PRM training datasets with PDDL-derived data yields substantial improvements in both mathematical and non-mathematical reasoning, as demonstrated across multiple benchmarks.
+These findings indicate that planning problems constitute a scalable and effective resource for generating robust, precise, and fine-grained training data for PRMs, going beyond the classical mathematical sources that dominate this field.
+</p>
+
+<h2>Citation</h2>
+<pre>
+@inproceedings{prmsmeetplannin2026,
+  title={Process Reward Models Meet Planning: Generating Precise and Scalable Datasets for Step-Level Rewards},
+  author={Raffaele Pisano and Roberto Navigli},
+  booktitle={Proceedings of ACL 2026},
+  year={2026},
+  note={Accepted}
+}
+</pre>
+
+</div>
+
+</body>
+</html>
